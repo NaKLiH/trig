@@ -19,7 +19,7 @@ export default function App() {
           </h1>
           <p className="text-slate-500 mt-1 text-base">
             Just like π, sin and cos are{' '}
-            <span className="text-purple-600 font-semibold">fixed ratios</span> — the same for every triangle, no matter the size
+            <span className="text-purple-600 font-semibold">fixed ratios</span> — the same for any triangle with the same angles, no matter the size
           </p>
         </div>
       </header>
@@ -119,11 +119,8 @@ export default function App() {
                 and down — a fixed vertical line sitting at x=1.
               </p>
               <p className="text-amber-800 text-xs leading-relaxed mb-2">
-                You might wonder: why not draw the tangent at P instead, and move it as P moves?
-                Because we need a fixed line to measure against. By always using the tangent at
-                x=1, the horizontal distance from the centre to the line is always exactly 1.
-                So when the angle ray meets the line, the height it reaches equals
-                opposite ÷ 1 = tan θ.
+                The line stays fixed at x=1 rather than moving with P. The height of the
+                amber segment where the angle ray meets it equals tan θ.
               </p>
               <p className="text-amber-800 text-xs leading-relaxed">
                 Try dragging P close to 90°. The <span className="font-semibold text-emerald-700">green

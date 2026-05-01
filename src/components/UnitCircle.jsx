@@ -174,9 +174,9 @@ export default function UnitCircle({ angle, onAngleChange }) {
             )}
             {/* Label: normal when fits, ∞ when segment goes off-screen */}
             {!tanIsLarge && (
-              <text x={TANGENT_X + 7} y={tanY} fontSize={10}
-                fill={COLORS.tan.text} fontWeight="600" dominantBaseline="middle">
-                tan θ
+              <text x={TANGENT_X + 7} y={tanY} fill={COLORS.tan.text} dominantBaseline="middle">
+                <tspan fontSize={10} fontWeight="600" x={TANGENT_X + 7} dy="-7">tan θ</tspan>
+                <tspan fontSize={9} fontWeight="400" x={TANGENT_X + 7} dy="13">= {tanVal.toFixed(2)}</tspan>
               </text>
             )}
             {tanIsLarge && (
